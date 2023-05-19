@@ -1,0 +1,680 @@
+@media(min-width: 1925px) {
+    .signatureimg {
+        right: -17%;
+        top: 101%;
+    }
+
+    .signatureimg2 {
+        left: -20%;
+        top: 184%;
+    }
+
+    .bottleimg {
+        left: 35%;
+    }
+
+    #festival-section h3 {
+        top: 29%;
+        left: 32%;
+    }
+
+}
+
+
+@media(max-width: 1440px) {
+
+    #content-section4 .container .text-box {
+        align-items: center;
+    }
+
+    .owl-carousel1 .owl-nav {
+        left: -130%;
+    }
+
+    .bottleimg {
+        left: 21%;
+    }
+
+    .signimg {
+        left: 9%;
+        width: 80%;
+    }
+
+    #festival-section h3 {
+        top: 28%;
+        left: 23%;
+        font-size: 170px;
+    }
+
+    .owl-carousel2 {
+        right: -10%;
+    }
+}
+
+@media(max-width: 1280px) {
+    #hero-section .bgvideo {
+        height: 100vh;
+    }
+
+    #first-section .container .first-col {
+        padding: 40px;
+    }
+
+    #content-section1 {
+        padding-top: 40px;
+    }
+
+    #content-section1 .container .second-col {
+        padding-left: 60px;
+    }
+
+    #content-section1 .container .buttons {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    #content-section1 .container .buttons {
+        margin-top: 0;
+    }
+
+    #content-section1 .container .buttons .btn:nth-child(1) {
+        margin-right: 0;
+    }
+
+    #content-section4 {
+        padding-left: 40px;
+    }
+
+    #content-section4 .container .bannerimg {
+        right: 10%;
+    }
+
+    #content-section4 .container .clip-text {
+        font-size: 250px;
+        line-height: 220px;
+    }
+
+    .owl-carousel1 {
+        width: 400px;
+        height: fit-content;
+        top: 34%;
+        right: 11%;
+        padding: 40px;
+    }
+
+    .owl-carousel1 .owl-nav {
+        left: -90%;
+    }
+
+}
+
+@media(max-width: 1199px) {
+    .bottleimg {
+        left: 14%;
+    }
+
+    #festival-section h3 {
+        left: 17%;
+    }
+}
+
+@media(max-width: 991px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 100%;
+    }
+
+    .col-6 {
+        width: 90%;
+    }
+
+    #content-section1 {
+        padding-top: 50px;
+    }
+
+    #content-section1 .container .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    #content-section1 .container .second-col {
+        padding-left: 0;
+    }
+
+    #content-section1 .container .buttons {
+        margin-top: 25px;
+    }
+
+
+    #content-section2 .container .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+
+    #content-section2 .container .second-col {
+        padding-left: 0;
+    }
+
+    #content-section3 {
+        padding-bottom: 80px;
+    }
+
+    #content-section3 .container .row {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+
+
+    #hero-section .container h1 {
+        font-size: 110px;
+    }
+
+    #first-section .container {
+        height: auto;
+    }
+
+    #first-section .container .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .col-7 {
+        width: auto;
+    }
+
+    .col-5 {
+        width: auto;
+    }
+
+    #first-section .container .second-col {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #first-section .container .second-col img {
+        position: relative;
+        bottom: 80px;
+        right: 20px;
+    }
+
+    #content-section4 {
+        padding-left: 0;
+    }
+
+    #content-section4 .container video {
+        width: 100%;
+        height: 650px;
+        object-fit: contain;
+    }
+
+    #content-section4 .container .text-box {
+        align-items: center;
+    }
+
+    #content-section4 .container .clip-text {
+        font-size: 200px;
+        line-height: 180px;
+    }
+
+    .owl-carousel1 {
+        top: 35%;
+        right: 11%;
+    }
+
+    .owl-carousel1 .owl-nav {
+        left: -60%;
+    }
+
+    #banner-section .container h2 {
+        font-size: 120px;
+    }
+
+    .rotate {
+        font-size: 40px;
+        left: 29.5%;
+        top: -10px;
+    }
+
+    .bottleimg {
+        left: 21%;
+        width: 60%;
+    }
+
+    #festival-section h3 {
+        top: 24%;
+        left: 21%;
+        font-size: 130px;
+        line-height: 150px;
+        white-space: pre-wrap;
+    }
+
+
+
+    .owl-carousel2 {
+        bottom: 10px;
+    }
+
+}
+
+@media(max-width: 840px) {
+    #festival-section h3 {
+        left: 18%;
+    }
+}
+
+@media(max-width: 770px) {
+
+    #hero-section .container h1 {
+        font-size: 6rem;
+    }
+
+    #first-section .container .first-col {
+        padding: 40px;
+    }
+
+    #content-section4 {
+        padding-bottom: 0;
+        height: 900px;
+    }
+
+    #content-section4 .container video {
+        height: 600px;
+    }
+
+    #content-section4 .container .bannerimg {
+        right: 20%;
+    }
+
+    #content-section4 .container .clip-text {
+        font-size: 9rem;
+        line-height: 150px;
+        word-wrap: break-word;
+    }
+
+    #content-section4 .container .text-box {
+        top: 0;
+        height: 634px;
+    }
+
+    .owl-carousel1 {
+        top: 37%;
+        right: 21%;
+        padding: 40px;
+    }
+
+    .owl-carousel1 .owl-nav {
+        left: 28%;
+        bottom: -30%;
+    }
+
+    #banner-section .container h2 {
+        font-size: 90px;
+    }
+
+    #festival-section h3 {
+        top: 20%;
+        left: 20%;
+        font-size: 7rem;
+        line-height: 150px;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 575px) {
+
+    #hero-section .container h1 {
+        font-size: 5rem;
+        white-space: pre-wrap;
+    }
+
+    .btn {
+        border: 2px solid white;
+        font-size: 10px;
+        line-height: 20px;
+        text-align: center;
+        color: white;
+        padding: 10px 15px;
+        text-transform: uppercase;
+        border-radius: 0;
+        outline: none;
+        position: relative;
+        z-index: 1;
+    }
+
+    #content-section1 .container .buttons .btn:nth-child(1) {
+        padding: 10px 20px;
+    }
+
+    #banner-section .container .btn {
+        padding: 10px 20px;
+    }
+
+    #content-section4 {
+        height: 1200px;
+    }
+
+    #content-section4 .container .clip-text {
+        font-size: 7rem;
+        line-height: 120px;
+        word-wrap: break-word;
+    }
+
+    #content-section4 .container .text-box {
+        top: 0;
+        height: 600px;
+    }
+
+    #content-section4 .container .bannerimg {
+        right: 16%;
+        top: 80%;
+        width: 450px;
+        margin: 0 auto;
+    }
+
+    .owl-carousel1 {
+        top: 98%;
+        right: 14%;
+    }
+
+    #content-section4 .owl-carousel1 .item img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #content-section4 .owl-carousel1 .content {
+        padding: 30px 0;
+        font-size: 11px;
+        line-height: 20px;
+    }
+
+    #content-section4 .owl-carousel1 .btn {
+        padding: 10px 20px;
+        font-size: 10px;
+    }
+
+    #banner-section .container h2 {
+        font-size: 80px;
+    }
+
+    .rotate {
+        font-size: 30px;
+        left: 29.5%;
+        top: -7px;
+    }
+
+    .whitetxt {
+        left: 25px;
+    }
+
+    #banner-section video {
+        height: 600px;
+    }
+
+    .bottleimg {
+        left: 27%;
+        width: 50%;
+        top: -40px;
+    }
+
+    #festival-section h3 {
+        top: 10%;
+        left: 20%;
+        font-size: 5rem;
+        line-height: 150px;
+        white-space: nowrap;
+    }
+
+    .owl-carousel2 {
+        right: 0;
+        padding: 50px 0;
+    }
+
+}
+
+@media (max-width:487px) {
+
+    .col-6 {
+        width: 93%;
+    }
+
+    #first-section .container h2 {
+        font-size: 60px;
+        line-height: normal;
+    }
+
+    #first-section .container .second-col img {
+        bottom: 50px;
+        width: 200px;
+    }
+
+    #content-section1 .container h2 {
+        font-size: 60px;
+        line-height: 58px;
+    }
+
+    #content-section2 .container h2 {
+        font-size: 60px;
+        line-height: 58px;
+    }
+
+    #content-section2 .container .first-col img {
+        width: 350px;
+    }
+
+    #content-section3 .container h2 {
+        font-size: 60px;
+        line-height: 58px;
+    }
+
+    #content-section3 .container .first-col {
+        padding-top: 50px;
+    }
+
+    #content-section3 .container .second-col img {
+        width: 350px;
+    }
+
+    .row>* {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    #content-section4 .container video {
+        height: 600px;
+    }
+
+    #content-section4 .container .bannerimg {
+        right: 10%;
+        top: 80%;
+        width: 450px;
+        margin: 0 auto;
+    }
+
+    .owl-carousel1 {
+        top: 98%;
+        right: 8%;
+    }
+
+    .owl-carousel1 .owl-dots {
+        bottom: 27%;
+        right: 38%;
+    }
+
+    .owl-carousel1 .owl-nav {
+        left: 30%;
+        bottom: -30%;
+    }
+
+    #banner-section .container h2 {
+        font-size: 60px;
+    }
+
+    .rotate {
+        font-size: 20px;
+        top: -7px;
+    }
+
+    .whitetxt {
+        left: 20px;
+    }
+
+}
+
+@media (max-width:447px) {
+
+    #hero-section .container h1 {
+        font-size: 4rem;
+    }
+
+    #first-section .container .first-col {
+        padding-top: 40px;
+        padding-left: 20px;
+    }
+
+    #first-section .container p {
+        width: auto;
+    }
+
+    #content-section1 .buttons {
+        display: flex;
+        gap: 20px;
+    }
+
+    #content-section1 .buttons .btn:nth-child(2) {
+        margin: 0 0 !important;
+    }
+
+    #content-section2 .container p {
+        width: auto;
+    }
+
+    #content-section3 .container p {
+        width: auto;
+    }
+
+    #content-section4 {
+        height: 1080px;
+    }
+
+    #content-section4 .container .bannerimg {
+        right: 8%;
+        width: auto;
+    }
+
+    #content-section4 .container video {
+        height: 500px;
+    }
+
+    #content-section4 .container .text-box {
+        top: -100px;
+        left: 0;
+        height: 720px;
+    }
+
+    #content-section4 .container .clip-text {
+        font-size: 5rem;
+        line-height: 80px;
+        word-wrap: break-word;
+    }
+
+    .owl-carousel1 {
+        width: 90%;
+    }
+
+    .owl-carousel1 .owl-nav {
+        left: 36%;
+        bottom: -30%;
+    }
+
+    .owl-carousel1 .owl-nav img {
+        width: 50px;
+    }
+
+    #content-section4 .owl-carousel1 .content {
+        padding: 20px 0;
+        font-size: 10px;
+        line-height: 20px;
+    }
+
+    #banner-section video {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    #festival-section h3 {
+        top: 10%;
+        left: 16%;
+        font-size: 4.5rem;
+    }
+
+
+}
+
+@media (max-width:414px) {
+    #content-section4 .owl-carousel1 .content {
+        padding: 10px 0;
+    }
+
+    .owl-carousel1 {
+        left: 4%;
+    }
+}
+
+@media (max-width:390px) {
+
+    #content-section4 {
+        height: 1050px;
+    }
+
+    .owl-carousel1 {
+        top: 93%;
+        right: 5%;
+    }
+
+    .owl-carousel1 .owl-nav {
+        left: 33%;
+        bottom: -30%;
+    }
+}
+
+@media (max-width:375px) {
+    .owl-carousel1 {
+        right: 7%;
+    }
+
+    #banner-section .container h2 {
+        font-size: 55px;
+    }
+
+    #festival-section h3 {
+        top: 10%;
+        left: 12%;
+        font-size: 4.5rem;
+    }
+}
+
+@media (max-width:360px) {
+    .owl-carousel1 {
+        top: 89%;
+    }
+}

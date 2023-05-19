@@ -1,0 +1,581 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  position: relative;
+  background-color: black;
+  overflow-x: hidden;
+}
+
+p {
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+@font-face {
+  font-family: "Variera Demo";
+  src: url("./font/variera-demo.bold-700.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Variera Demo";
+  src: url("./font/variera-demo.extra-bold-800.ttf");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Eastman Grotesque Trial";
+  src: url("./font/Eastman-Grotesque-Light-trial-500.otf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Eastman Grotesque Trial";
+  src: url("./font/Eastman-Grotesque-Demi-Bold-trial-600.otf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Eastman Grotesque Trial";
+  src: url("./font/Eastman-Grotesque-Bold-trial-700.otf");
+  font-weight: 700;
+}
+
+/* ========== Global Class ========== */
+
+.var700 {
+  font-family: "Variera Demo";
+  font-weight: 700;
+}
+
+.var800 {
+  font-family: "Variera Demo";
+  font-weight: 800;
+}
+
+.east500 {
+  font-family: "Eastman Grotesque Trial";
+  font-weight: 500;
+}
+
+.east600 {
+  font-family: "Eastman Grotesque Trial";
+  font-weight: 600;
+}
+
+.east700 {
+  font-family: "Eastman Grotesque Trial";
+  font-weight: 700;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background-color: white;
+  transform: scaleX(0);
+  transition: transform 300ms ease-in-out;
+  transform-origin: left;
+}
+
+.btn {
+  border: 2px solid white;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  color: white;
+  padding: 13px 26px;
+  text-transform: uppercase;
+  border-radius: 0;
+  outline: none;
+  position: relative;
+  z-index: 1;
+}
+
+.btn:hover::before,
+.btn:focus::before {
+  transform: scaleX(1);
+}
+
+.btn:hover {
+  color: #000;
+  border: 2px solid white;
+}
+
+.orangetxt {
+  color: #e8d1b7;
+}
+
+.signatureimg {
+  position: absolute;
+  right: -33%;
+  top: 152%;
+  z-index: 0;
+}
+
+.signatureimg2 {
+  position: absolute;
+  left: -27%;
+  top: 280%;
+  z-index: 0;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+/* ========== Hero Section ========== */
+#hero-section {
+  padding-bottom: 168px;
+}
+
+#hero-section .bgvideo {
+  width: 100%;
+  background: linear-gradient(to bottom, transparent 0%, rgb(0, 0, 0) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  object-fit: cover;
+}
+
+#hero-section .container {
+  position: relative;
+}
+
+#hero-section .container .logo {
+  padding-top: 30px;
+  padding-bottom: 140px;
+}
+
+#hero-section .container h1 {
+  color: white;
+  font-size: 150px;
+  position: relative;
+  z-index: 2;
+}
+
+#hero-section .container span {
+  color: #eed3b1;
+}
+
+.fadeimg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* =========== First Section =========== */
+#first-section {
+  position: relative;
+  z-index: 1;
+}
+
+#first-section .container {
+  background: url("/assets/img1.png") center center;
+  height: 500px;
+}
+
+#first-section .container h2 {
+  color: white;
+  font-size: 75px;
+  line-height: 60px;
+}
+
+#first-section .container h2:nth-child(1) {
+  color: #eed3b1;
+}
+
+#first-section .container p {
+  width: 83%;
+}
+
+#first-section .container .first-col {
+  padding: 70px;
+}
+
+#first-section .container .second-col img {
+  position: relative;
+  bottom: 120px;
+  right: 12px;
+}
+
+/* ======= Content Section 1 ========= */
+#content-section1 {
+  position: relative;
+  padding-bottom: 70px;
+  z-index: 1;
+}
+
+#content-section1 .container .second-col {
+  padding-left: 80px;
+}
+
+#content-section1 .container h2 {
+  font-size: 75px;
+  line-height: 60px;
+  color: white;
+  width: 100%;
+  position: relative;
+}
+
+#content-section1 .container h2:nth-child(1),
+#content-section1 .container h2:nth-child(2) {
+  color: #eed3b1;
+}
+
+#content-section1 .container .buttons {
+  margin-top: 25px;
+}
+
+#content-section1 .container .buttons .btn:nth-child(1) {
+  padding: 13px 40px;
+  margin-right: 20px;
+}
+
+/* ======= Content Section 2 ========= */
+#content-section2 {
+  position: relative;
+  z-index: 1;
+  top: -14px;
+  padding-bottom: 70px;
+}
+
+#content-section2 .container .second-col {
+  padding-left: 40px;
+}
+
+#content-section2 .container div {
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  padding-top: 5px;
+}
+
+#content-section2 .container p {
+  padding-top: 25px;
+  color: rgba(255, 255, 255, 0.9);
+  width: 80%;
+}
+
+#content-section2 .container h2 {
+  font-size: 75px;
+  line-height: 60px;
+  width: 100%;
+}
+
+#content-section2 .container h2:nth-child(1) {
+  color: #eed3b1;
+}
+
+#content-section2 .container .second-col {
+  padding-left: 80px;
+}
+
+/* ======= Content Section 3 ========= */
+#content-section3 {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 50px;
+}
+
+#content-section3 .container .second-col img {
+  padding-left: 60px;
+  position: relative;
+  bottom: 10%;
+}
+
+#content-section3 .container div {
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  padding-top: 5px;
+}
+
+#content-section3 .container p {
+  padding-top: 25px;
+  color: rgba(255, 255, 255, 0.9);
+  width: 65%;
+}
+
+#content-section3 .container h2 {
+  font-size: 75px;
+  line-height: 60px;
+  width: 100%;
+}
+
+#content-section3 .container h2:nth-child(1) {
+  color: #eed3b1;
+}
+
+/* ============== Banner Section 1 ============ */
+#banner-img {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 10px;
+}
+
+#banner-img .container {
+  background: url("/assets/img6.png") center center;
+  height: 600px;
+  position: relative;
+}
+
+/* ============ Content Section 4 ============= */
+#content-section4 {
+  position: relative;
+  width: 100%;
+  padding-bottom: 150px;
+}
+
+#content-section4 .container {
+  position: relative;
+}
+
+#content-section4 .container video {
+  width: 100%;
+  height: 650px;
+  object-fit: cover;
+}
+
+#content-section4 .container .text-box {
+  position: absolute;
+  background-color: #000;
+  top: 0;
+  width: 100%;
+  height: 720px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  mix-blend-mode: multiply;
+}
+
+#content-section4 .container .clip-text {
+  font-size: 330px;
+  text-align: left;
+  line-height: 265px;
+  letter-spacing: -2%;
+}
+
+#content-section4 .container .bannerimg {
+  position: absolute;
+  right: 17%;
+  top: 18%;
+}
+
+.owl-carousel1 {
+  width: 400px;
+  height: fit-content;
+  position: absolute;
+  z-index: 2;
+  top: 35%;
+  right: 18%;
+  padding: 40px;
+}
+
+.owl-carousel1 .item {
+  position: relative;
+}
+
+.owl-carousel1 .owl-dots {
+  position: absolute;
+  bottom: 25%;
+  right: 40%;
+}
+
+.owl-carousel1 .owl-nav {
+  position: absolute;
+  bottom: 0;
+  left: -166%;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #ffffff;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  background: #867057;
+}
+
+.owl-carousel1 .owl-next:hover,
+.owl-carousel1 .owl-prev:hover {
+  background-color: transparent !important;
+}
+
+#content-section4 .owl-carousel1 .content {
+  padding: 30px 0;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -2%;
+  text-align: left;
+}
+
+#content-section4 .owl-carousel1 .btn {
+  margin-top: 50px;
+  padding: 13px 40px;
+  font-size: 12px;
+}
+
+/* ================ Banner Section 2 ================== */
+#banner-section {
+  position: relative;
+  z-index: 2;
+}
+
+#banner-section video {
+  width: 100%;
+  height: 850px;
+  object-fit: cover;
+}
+
+#banner-section .container {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#banner-section .container h2 {
+  font-size: 150px;
+  line-height: 70px;
+  position: relative;
+  left: -10px;
+  text-align: center;
+}
+
+.rotate {
+  transform: rotate(270deg);
+  font-size: 55px;
+  width: max-content;
+  display: inline-block;
+  position: absolute;
+  left: 28.7%;
+  top: -10px;
+}
+
+.whitetxt {
+  color: white;
+  position: relative;
+  left: 40px;
+}
+
+#banner-section .container .btn {
+  padding: 13px 45px;
+}
+
+/* ========== Signature Festival Section ============ */
+#festival-section {
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.bottleimg {
+  position: relative;
+  left: 30%;
+  z-index: 1;
+  top: -90px;
+}
+
+.signimg {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+}
+
+#festival-section h3 {
+  font-size: 210px;
+  line-height: 70px;
+  position: absolute;
+  top: 27%;
+  left: 26%;
+  z-index: 3;
+}
+
+.owl-carousel2 {
+  position: relative;
+  right: -20%;
+  bottom: 100px;
+}
+
+.owl-carousel2 .item {
+  padding: 0 10px !important;
+}
+
+/* ================ Footer Section ============== */
+footer {
+  position: relative;
+  background: url("/assets/img14.png") center center;
+  height: 870px;
+}
+
+footer img {
+  position: absolute;
+  top: -9%;
+}
+
+/* ================ Loader =================== */
+
+#loader{
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.spinner{
+  border-top: 16px solid blue;
+  border-right: 16px solid green;
+  border-bottom: 16px solid red;
+  border-left: 16px solid pink;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
