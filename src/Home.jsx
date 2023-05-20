@@ -1,18 +1,12 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import "./css/style.css";
 import "./css/responsive.css";
-
+import { Fade } from "react-awesome-reveal";
 
 function Home() {
-
-    useEffect(() => {
-        AOS.init();
-    }, []);
 
     return (
         <div className='wrapper'>
@@ -53,137 +47,147 @@ function Home() {
             </section>
 
             {/* ================ Content Section 1 ==============  */}
-            <section id="content-section1" data-aos = "fade-right" data-aos-duration="2000">
-                <div className="container">
-                    <div className="row">
+            <Fade direction='left' duration={2000}>
+                <section id="content-section1">
+                    <div className="container">
+                        <div className="row">
 
-                        <div className="col-6 px-0 first-col">
-                            <img src="/assets/img3.png" alt="img" />
-                        </div>
+                            <div className="col-6 px-0 first-col">
+                                <img src="/assets/img3.png" alt="img" />
+                            </div>
 
-                        <div className="col-6 second-col d-flex flex-column justify-content-center">
-                            <h2 className="var700 text-uppercase">here's to</h2>
-                            <h2 className="var700 text-uppercase">louise martin,</h2>
-                            <h2 className="var700 text-uppercase text-white">our master blender</h2>
-                            <div className="buttons">
-                                <button className="btn east600">a phenomenal blend</button>
-                                <button className="btn east600">born of masterful craft</button>
+                            <div className="col-6 second-col d-flex flex-column justify-content-center">
+                                <h2 className="var700 text-uppercase">here's to</h2>
+                                <h2 className="var700 text-uppercase">louise martin,</h2>
+                                <h2 className="var700 text-uppercase text-white">our master blender</h2>
+                                <div className="buttons">
+                                    <button className="btn east600">a phenomenal blend</button>
+                                    <button className="btn east600">born of masterful craft</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </Fade>
 
             {/* ================= Content Section 2 ==================  */}
-            <section id="content-section2" data-aos = "fade-left" data-aos-duration="2000" data-aos-delay="300">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-6 px-0 first-col">
-                            <img src="/assets/img4.png" alt="img" />
-                        </div>
-                        <div className="col-6 second-col d-flex flex-column justify-content-center">
-                            <h2 className="var700 text-uppercase">signature</h2>
-                            <h2 className="var700 text-uppercase text-white">rare aged whisky</h2>
-                            <div className="east600 text-uppercase">deep & rich</div>
-                            <p className="east500">An authentically rich taste, with distinct hints of sweetness and fruitiness. A
-                                medley of woody
-                                undertones brought to life reaching its crescendo
-                                to leave a deep and lasting signature.</p>
-                            <div className="buttons mt-3">
-                                <button className="btn east600">explore signature whisky</button>
+            <Fade direction='right' duration={2000}>
+                <section id="content-section2">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-6 px-0 first-col">
+                                <img src="/assets/img4.png" alt="img" />
+                            </div>
+                            <div className="col-6 second-col d-flex flex-column justify-content-center">
+                                <h2 className="var700 text-uppercase">signature</h2>
+                                <h2 className="var700 text-uppercase text-white">rare aged whisky</h2>
+                                <div className="east600 text-uppercase">deep & rich</div>
+                                <p className="east500">An authentically rich taste, with distinct hints of sweetness and fruitiness. A
+                                    medley of woody
+                                    undertones brought to life reaching its crescendo
+                                    to leave a deep and lasting signature.</p>
+                                <div className="buttons mt-3">
+                                    <button className="btn east600">explore signature whisky</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </Fade>
 
             {/* ================== Content Section 3 =================  */}
-            <section id="content-section3" data-aos = "fade-right" data-aos-duration="2000" data-aos-delay="300">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-6 first-col d-flex flex-column justify-content-center">
-                            <h2 className="var700 text-uppercase">signature</h2>
-                            <h2 className="var700 text-uppercase text-white">premier whisky</h2>
-                            <div className="east600 text-uppercase">smooth & creamy</div>
-                            <p className="east500">Smoothness elevated to new heights, with a dash of fruitiness and a tinge of
-                                maltiness. A symphony of floral and vanillic notes. All coming to an epic conclusion in an
-                                exquisite and creamy blend.</p>
-                            <div className="buttons mt-3">
-                                <button className="btn east600">explore signature whisky</button>
+            <Fade direction='left' duration={2000}>
+                <section id="content-section3">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-6 first-col d-flex flex-column justify-content-center">
+                                <h2 className="var700 text-uppercase">signature</h2>
+                                <h2 className="var700 text-uppercase text-white">premier whisky</h2>
+                                <div className="east600 text-uppercase">smooth & creamy</div>
+                                <p className="east500">Smoothness elevated to new heights, with a dash of fruitiness and a tinge of
+                                    maltiness. A symphony of floral and vanillic notes. All coming to an epic conclusion in an
+                                    exquisite and creamy blend.</p>
+                                <div className="buttons mt-3">
+                                    <button className="btn east600">explore signature whisky</button>
+                                </div>
+                            </div>
+
+                            <div className="col-6 px-0 second-col">
+                                <img src='assets/img5.png' alt="img" />
                             </div>
                         </div>
-
-                        <div className="col-6 px-0 second-col">
-                            <img src='assets/img5.png' alt="img" />
-                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </Fade>
 
             {/* ================ Banner Section 1 ===============  */}
-            <div id="banner-img">
-                <div className="container"></div>
-            </div>
+            <Fade>
+                <div id="banner-img">
+                    <div className="container"></div>
+                </div>
+            </Fade>
 
             {/* ================= Content Section 4 ================  */}
-            <div id="content-section4">
-                <div className="container">
-                    <video autoPlay muted loop className="mx-auto">
-                        <source src="assets/video2.mp4" type="video/mp4" />
-                    </video>
-                    <div className="text-box">
-                        <div className="clip-text var800 text-uppercase">Signature</div>
-                        <div className="clip-text var800 text-uppercase">For Good</div>
+            <Fade>
+                <div id="content-section4">
+                    <div className="container">
+                        <video autoPlay muted loop className="mx-auto">
+                            <source src="assets/video2.mp4" type="video/mp4" />
+                        </video>
+                        <div className="text-box">
+                            <div className="clip-text var800 text-uppercase">Signature</div>
+                            <div className="clip-text var800 text-uppercase">For Good</div>
+                        </div>
+                        <img src="/assets/img7.png" alt="img" className="bannerimg" />
+                        <OwlCarousel className='owl-theme owl-carousel1' loop={false} margin={300} nav={true} items={1} navText={["<img src='assets/leftarrow.png' alt='arrow'>", "<img src='assets/rightarrow.png' alt='arrow'>"]}>
+                            <div className="item text-center">
+                                <img src="/assets/text.png" alt="text" />
+                                <div className="content east500">EVERY SEPTEMBER, THE ZIRO FESTIVAL OF MUSIC TAKES PLACE IN THE
+                                    BREATHTAKING
+                                    ZIRO VALLEY OF
+                                    ARUNACHAL PRADESH, INDIA. IT'S A ONE-OF-A-KIND FESTIVAL IN THE WORLD WHICH IS KNOWN FOR ITS
+                                    ECO-FRIENDLY INFRASTRUCTURE AND PRACTICES. EXPERIENCE INDIA'S GREATEST MUSIC FESTIVAL THAT
+                                    CELEBRATES MUSIC AND CULTURE IN THE LAP OF NATURE.</div>
+                                <button className="btn east600">EXPLORE ZIRO FESTIVAL OF MUSIC</button>
+                            </div>
+
+                            <div className="item text-center">
+                                <img src="/assets/text.png" alt="text" className="textimg" />
+                                <div className="content east500">EVERY SEPTEMBER, THE ZIRO FESTIVAL OF MUSIC TAKES PLACE IN THE
+                                    BREATHTAKING
+                                    ZIRO VALLEY OF
+                                    ARUNACHAL PRADESH, INDIA. IT'S A ONE-OF-A-KIND FESTIVAL IN THE WORLD WHICH IS KNOWN FOR ITS
+                                    ECO-FRIENDLY INFRASTRUCTURE AND PRACTICES. EXPERIENCE INDIA'S GREATEST MUSIC FESTIVAL THAT
+                                    CELEBRATES MUSIC AND CULTURE IN THE LAP OF NATURE.</div>
+                                <button className="btn east600">EXPLORE ZIRO FESTIVAL OF MUSIC</button>
+                            </div>
+
+                            <div className="item text-center">
+                                <img src="/assets/text.png" alt="text" className="textimg" />
+                                <div className="content east500">EVERY SEPTEMBER, THE ZIRO FESTIVAL OF MUSIC TAKES PLACE IN THE
+                                    BREATHTAKING
+                                    ZIRO VALLEY OF
+                                    ARUNACHAL PRADESH, INDIA. IT'S A ONE-OF-A-KIND FESTIVAL IN THE WORLD WHICH IS KNOWN FOR ITS
+                                    ECO-FRIENDLY INFRASTRUCTURE AND PRACTICES. EXPERIENCE INDIA'S GREATEST MUSIC FESTIVAL THAT
+                                    CELEBRATES MUSIC AND CULTURE IN THE LAP OF NATURE.</div>
+                                <button className="btn east600">EXPLORE ZIRO FESTIVAL OF MUSIC</button>
+                            </div>
+
+                            <div className="item text-center">
+                                <img src="/assets/text.png" alt="text" className="textimg" />
+                                <div className="content east500">EVERY SEPTEMBER, THE ZIRO FESTIVAL OF MUSIC TAKES PLACE IN THE
+                                    BREATHTAKING
+                                    ZIRO VALLEY OF
+                                    ARUNACHAL PRADESH, INDIA. IT'S A ONE-OF-A-KIND FESTIVAL IN THE WORLD WHICH IS KNOWN FOR ITS
+                                    ECO-FRIENDLY INFRASTRUCTURE AND PRACTICES. EXPERIENCE INDIA'S GREATEST MUSIC FESTIVAL THAT
+                                    CELEBRATES MUSIC AND CULTURE IN THE LAP OF NATURE.</div>
+                                <button className="btn east600">EXPLORE ZIRO FESTIVAL OF MUSIC</button>
+                            </div>
+
+                        </OwlCarousel>
                     </div>
-                    <img src="/assets/img7.png" alt="img" className="bannerimg" />
-                    <OwlCarousel className='owl-theme owl-carousel1' loop={false} margin={300} nav={true} items={1} navText={["<img src='assets/leftarrow.png' alt='arrow'>", "<img src='assets/rightarrow.png' alt='arrow'>"]}>
-                        <div className="item text-center">
-                            <img src="/assets/text.png" alt="text" />
-                            <div className="content east500">EVERY SEPTEMBER, THE ZIRO FESTIVAL OF MUSIC TAKES PLACE IN THE
-                                BREATHTAKING
-                                ZIRO VALLEY OF
-                                ARUNACHAL PRADESH, INDIA. IT'S A ONE-OF-A-KIND FESTIVAL IN THE WORLD WHICH IS KNOWN FOR ITS
-                                ECO-FRIENDLY INFRASTRUCTURE AND PRACTICES. EXPERIENCE INDIA'S GREATEST MUSIC FESTIVAL THAT
-                                CELEBRATES MUSIC AND CULTURE IN THE LAP OF NATURE.</div>
-                            <button className="btn east600">EXPLORE ZIRO FESTIVAL OF MUSIC</button>
-                        </div>
-
-                        <div className="item text-center">
-                            <img src="/assets/text.png" alt="text" className="textimg" />
-                            <div className="content east500">EVERY SEPTEMBER, THE ZIRO FESTIVAL OF MUSIC TAKES PLACE IN THE
-                                BREATHTAKING
-                                ZIRO VALLEY OF
-                                ARUNACHAL PRADESH, INDIA. IT'S A ONE-OF-A-KIND FESTIVAL IN THE WORLD WHICH IS KNOWN FOR ITS
-                                ECO-FRIENDLY INFRASTRUCTURE AND PRACTICES. EXPERIENCE INDIA'S GREATEST MUSIC FESTIVAL THAT
-                                CELEBRATES MUSIC AND CULTURE IN THE LAP OF NATURE.</div>
-                            <button className="btn east600">EXPLORE ZIRO FESTIVAL OF MUSIC</button>
-                        </div>
-
-                        <div className="item text-center">
-                            <img src="/assets/text.png" alt="text" className="textimg" />
-                            <div className="content east500">EVERY SEPTEMBER, THE ZIRO FESTIVAL OF MUSIC TAKES PLACE IN THE
-                                BREATHTAKING
-                                ZIRO VALLEY OF
-                                ARUNACHAL PRADESH, INDIA. IT'S A ONE-OF-A-KIND FESTIVAL IN THE WORLD WHICH IS KNOWN FOR ITS
-                                ECO-FRIENDLY INFRASTRUCTURE AND PRACTICES. EXPERIENCE INDIA'S GREATEST MUSIC FESTIVAL THAT
-                                CELEBRATES MUSIC AND CULTURE IN THE LAP OF NATURE.</div>
-                            <button className="btn east600">EXPLORE ZIRO FESTIVAL OF MUSIC</button>
-                        </div>
-
-                        <div className="item text-center">
-                            <img src="/assets/text.png" alt="text" className="textimg" />
-                            <div className="content east500">EVERY SEPTEMBER, THE ZIRO FESTIVAL OF MUSIC TAKES PLACE IN THE
-                                BREATHTAKING
-                                ZIRO VALLEY OF
-                                ARUNACHAL PRADESH, INDIA. IT'S A ONE-OF-A-KIND FESTIVAL IN THE WORLD WHICH IS KNOWN FOR ITS
-                                ECO-FRIENDLY INFRASTRUCTURE AND PRACTICES. EXPERIENCE INDIA'S GREATEST MUSIC FESTIVAL THAT
-                                CELEBRATES MUSIC AND CULTURE IN THE LAP OF NATURE.</div>
-                            <button className="btn east600">EXPLORE ZIRO FESTIVAL OF MUSIC</button>
-                        </div>
-
-                    </OwlCarousel>
                 </div>
-            </div>
+            </Fade>
 
             {/* ==================== Banner Section 2 ==================  */}
             <div id="banner-section">
